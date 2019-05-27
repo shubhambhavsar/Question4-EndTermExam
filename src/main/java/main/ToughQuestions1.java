@@ -40,8 +40,10 @@ public class ToughQuestions1 {
            break;
            case 2: System.out.println("Enter the amount to be debited");
            debit = Integer.parseInt(br.readLine());
+           
            a.debit(debit);
            break;
+          
            case 3:a.display();
            break;
        }
@@ -65,6 +67,7 @@ class Account {
     int credit(int credit) {
         return bal = bal + credit;
     }
+    
     void display()
     {
        System.out.println("Account Details");
@@ -74,7 +77,7 @@ class Account {
         System.out.println("Accout Balance :"+bal);
         System.out.println();
     }
-    int debit(Integer debit) {
+    int debit(int debit) {
          return bal = bal - debit;
     }
 }
